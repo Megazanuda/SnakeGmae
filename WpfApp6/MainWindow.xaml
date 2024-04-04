@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="Змейка" Height="500" Width="800" ResizeMode="NoResize">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Canvas Name="PaintCanvas" MaxWidth="800" MaxHeight="500" Grid.ColumnSpan="2" Margin="5,0,5,0" />
+
+        <TextBox x:Name="ScoreLabel" Text="Счет: 0" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" Background="Transparent"/>
+        <TextBox x:Name="BestScoreLabel" Text="Таблица лидеров" FontSize="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Grid.Column="1" Background="Transparent"/>
+        <TextBox x:Name="pause" Text="ПАУЗА" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" IsEnabled="False" Visibility="Hidden"/>
+    </Grid>
+
+</Window>
