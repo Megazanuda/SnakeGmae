@@ -15,6 +15,7 @@ namespace WpfApp6
                     MainWindow mainWindow = new MainWindow();
                     mainWindow.name1 = Name.Text;
                     mainWindow.Show();
+                    this.Close();
                     
                     break;
             }
